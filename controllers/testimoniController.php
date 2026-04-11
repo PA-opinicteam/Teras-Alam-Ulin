@@ -1,7 +1,6 @@
 <?php
 require_once 'config/koneksi.php';
 
-// ambil hanya 3 testimoni yang sudah di-approve
 $query = "SELECT * FROM testimoni 
           WHERE status = 'approved' 
           ORDER BY id DESC 
@@ -9,7 +8,6 @@ $query = "SELECT * FROM testimoni
 
 $testimoni = mysqli_query($conn, $query);
 
-// simpan testimoni dari user
 if(isset($_POST['kirim_testimoni'])){
 
     $nama = $_POST['nama'];
@@ -21,7 +19,6 @@ if(isset($_POST['kirim_testimoni'])){
 
     mysqli_query($conn, $query);
 
-    // refresh halaman
     header("Location: ".$_SERVER['PHP_SELF']);
     exit;
 }

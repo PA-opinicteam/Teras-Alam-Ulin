@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){
     stars.forEach(star => {
         star.addEventListener('click', function(){
             const value = parseInt(this.dataset.value);
-            console.log("klik:", value); // DEBUG
+            console.log("klik:", value);
             setRating(value);
         });
     });

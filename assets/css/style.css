@@ -1,6 +1,3 @@
-/* =========================
-   GLOBAL
-========================= */
 body {
     font-family: 'Inter', sans-serif;
     color: #333;
@@ -35,9 +32,7 @@ p {
     line-height: 1.6;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* ==NAVBAR== */
 .navbar {
     background: #F5F5DC;
 }
@@ -56,9 +51,7 @@ p {
     color: #2E7D32 !important;
 }
 
-/* =========================
-   HERO
-========================= */
+/* ===HERO=== */
 .hero {
     height: 100vh;
     background: url('../img/hero.jpg') center/cover no-repeat;
@@ -89,9 +82,7 @@ p {
     opacity: 0.9;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* ===BUTTON=== */
 .btn {
     transition: all 0.3s ease;
 }
@@ -119,7 +110,7 @@ p {
     color: white;
 }
 
-/* BUTTON FULL (FINAL FIX) */
+/*==BUTTON FULL==*/
 .btn-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -136,9 +127,7 @@ p {
     border-radius: 12px;
 }
 
-/* =========================
-   CARD
-========================= */
+/* ===CARD=== */
 .card-custom {
     border: none;
     border-radius: 16px;
@@ -174,9 +163,7 @@ p {
     min-height: 48px;
 }
 
-/* =========================
-   GALERI
-========================= */
+/* ===GALERI=== */
 .galeri-img {
     border-radius: 16px;
     transition: 0.3s;
@@ -209,21 +196,17 @@ p {
     color: white;
 }
 
-/* =========================
-   TENTANG
-========================= */
-/* FIX TOTAL SECTION TENTANG */
+/* ===TENTANG=== */
 .tentang-row {
     display: flex;
     align-items: center;
 }
 
-/* WRAPPER GAMBAR */
+/*==WRAPPER GAMBAR==*/
 .tentang-img-wrapper {
     height: 100%;
 }
 
-/* GAMBAR */
 .tentang-img {
     width: 100%;
     height: 600px;
@@ -246,30 +229,22 @@ p {
     background: #E8F5E9;
 }
 
-
-
-/* =========================
-   TESTIMONI
-========================= */
-/* TESTIMONI FIX */
+/* ===TESTIMONI==== */
 .testimoni-card {
     border-radius: 16px;
     padding: 20px;
     background: #F5F5DC;
-    height: 100%; /* biar semua sama tinggi */
+    height: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     text-align: center;
 }
 
-/* Biar semua card dalam row sama tinggi */
 #testimoni .row > div {
     display: flex;
 }
 
-/* Batasi teks biar gak kepanjangan */
 .testimoni-card p {
     min-height: 60px;
     margin-bottom: 10px;
@@ -279,7 +254,7 @@ p {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* RATING BINTANG */
+/*==RATING==*/
 .rating {
     color: #fbc02d; /* kuning emas */
     font-size: 18px;
@@ -297,7 +272,7 @@ p {
     font-size: 28px;
     cursor: pointer;
     color: #ccc !important;
-    user-select: none; /* 🔥 pindah ke sini */
+    user-select: none; 
 }
 
 .rating-input span.active {
@@ -309,12 +284,15 @@ p {
     transform: scale(1.2);
 }
 
+.menu-card {
+    transition: 0.3s;
+}
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 
-/* =========================
-   FORM RESERVASI
-========================= */
-
-/* RESERVASI STYLE */
+/*==RESERVASI==*/
 .reservasi-card {
     background: #fff;
     padding: 30px;
@@ -327,20 +305,17 @@ p {
 .icon-box {
     width: 45px;
     height: 45px;
-
     background: #E8F5E9;
     color: #2E7D32;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 12px;
     font-size: 18px;
 }
 
 .section-cream {
-    background: #EDEBD2; /* lebih soft dari sebelumnya */
+    background: #EDEBD2; 
     padding: 100px 0;
 }
 
@@ -391,8 +366,7 @@ p {
     transform: translateY(-30px);
 }
 
-/* ===LOKASI=== */
-/* LOKASI SECTION */
+/*===LOKASI===*/
 .lokasi-card {
     background: #F5F5DC;
     padding: 30px;
@@ -421,7 +395,7 @@ p {
     font-size: 12px;
 }
 
-/* MAP */
+/*==MAP==*/
 .map-card {
     position: relative;
     border-radius: 20px;
@@ -435,7 +409,7 @@ p {
     height: 100%;
 }
 
-/* LABEL MAP */
+/*==LABEL MAP==*/
 .map-label {
     position: absolute;
     bottom: 15px;
@@ -446,9 +420,7 @@ p {
     font-size: 14px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-/* =========================
-   FOOTER
-========================= */
+/* ===FOOTER=== */
 footer {
     background: #f8f9fa;
     font-size: 14px;

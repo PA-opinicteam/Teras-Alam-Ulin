@@ -2,7 +2,6 @@ function kirimWhatsApp() {
     let nama = document.getElementById('nama').value;
     let tanggal = document.getElementById('tanggal').value;
 
-    // convert ke format MySQL
     let tgl = new Date(tanggal);
     let mysqlDate = tgl.toISOString().split('T')[0];
 
@@ -24,7 +23,7 @@ function kirimWhatsApp() {
     .then(response => response.text())
     .then(result => {
 
-        console.log(result); // debug
+        console.log(result);
 
         if(result === "success") {
 
@@ -45,7 +44,7 @@ Jenis Acara: ${jenis}`;
             document.getElementById('formReservasi').reset();
 
         } else {
-            alert(result); // 🔥 tampilkan error asli
+            alert(result);
         }
 
     });
