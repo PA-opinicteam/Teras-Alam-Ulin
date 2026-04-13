@@ -2,39 +2,60 @@
 require '../config/auth.php';
 require '../config/koneksi.php';
 
-$id = (int)$_GET['id'];
-$query = mysqli_query($conn, "SELECT * FROM fasilitas WHERE id = $id");
-$data = mysqli_fetch_assoc($query);
+$activePage = 'fasilitas';
 
-if (!$data) {
-    die("Data tidak ditemukan");
+$id = (int)($_GET['id'] ?? 0);
+$query = mysqli_query($conn, "SELECT * FROM fasilitas WHERE id = $id");
+$row = mysqli_fetch_assoc($query);
+
+if (!$row) {
+    echo "Data fasilitas tidak ditemukan.";
+    exit;
 }
 ?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Edit Fasilitas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Edit Fasilitas</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<?php include 'layout_style.php'; ?>
 </head>
-<body class="bg-light">
+<body>
 
-<div class="container py-4">
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <h2 class="mb-4">Edit Fasilitas</h2>
+<div class="admin-layout">
+    <?php include 'sidebar.php'; ?>
 
-            <form action="../aksi_edit_fasilitas.php" method="POST">
-                <input type="hidden" name="id" value="<?= $data['id']; ?>">
+    <div class="main-content">
+        <div class="content-card">
+            <h3 class="mb-4">Edit Fasilitas</h3>
+
+            <form action="../aksi/aksi_edit_fasilitas.php" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="<?= $row['id']; ?>">
 
                 <div class="mb-3">
                     <label class="form-label">Nama Fasilitas</label>
-                    <input type="text" name="nama_fasilitas" class="form-control" value="<?= htmlspecialchars($data['nama_fasilitas']); ?>" required>
+                    <input type="text" name="nama" class="form-control"
+                           value="<?= htmlspecialchars($row['nama']); ?>" required>
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">Icon</label>
-                    <input type="text" name="icon" class="form-control" value="<?= htmlspecialchars($data['icon']); ?>" required>
+                    <label class="form-label">Deskripsi</label>
+                    <textarea name="deskripsi" class="form-control"><?= htmlspecialchars($row['deskripsi'] ?? ''); ?></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Gambar Saat Ini</label><br>
+                    <?php if (!empty($row['gambar'])): ?>
+                        <img src="../assets/img/<?= htmlspecialchars($row['gambar']); ?>" class="preview-img">
+                    <?php else: ?>
+                        <span class="text-white">Tidak ada gambar</span>
+                    <?php endif; ?>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Ganti Gambar</label>
+                    <input type="file" name="gambar" class="form-control">
                 </div>
 
                 <button type="submit" class="btn btn-success">Update</button>

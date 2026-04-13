@@ -1,3 +1,19 @@
+<?php
+session_start();
+
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+header("Expires: 0");
+
+if (isset($_SESSION['login']) && $_SESSION['login'] === true) {
+    header("Location: admin/dashboard.php");
+    exit;
+}
+
+$error = $_SESSION['error_login'] ?? '';
+unset($_SESSION['error_login']);
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -13,15 +29,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     background:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
         url('assets/img/hero.jpg') no-repeat center center/cover;
-
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Card glass */
 .login-box {
     background: rgba(255,255,255,0.12);
     backdrop-filter: blur(12px);
@@ -33,7 +46,6 @@ body {
     text-align: center;
 }
 
-/* Judul */
 .login-title {
     font-size: 28px;
     font-weight: 700;
@@ -45,7 +57,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* Input */
 .form-control {
     border-radius: 10px;
     padding: 10px;
@@ -58,7 +69,6 @@ body {
     color: #ddd;
 }
 
-/* Password wrapper */
 .password-wrapper {
     position: relative;
 }
@@ -70,7 +80,6 @@ body {
     cursor: pointer;
 }
 
-/* Button */
 .btn-login {
     border-radius: 10px;
     padding: 10px;
@@ -78,13 +87,13 @@ body {
     background: #198754;
     border: none;
     transition: 0.3s;
+    color: white;
 }
 
 .btn-login:hover {
     background: #157347;
 }
 
-/* Link */
 .login-link a {
     color: #ddd;
     text-decoration: none;
@@ -92,6 +101,17 @@ body {
 
 .login-link a:hover {
     color: white;
+}
+
+.alert-login {
+    background: rgba(220, 53, 69, 0.18);
+    border: 1px solid rgba(220, 53, 69, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    text-align: left;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -102,7 +122,13 @@ body {
     <div class="login-title">Teras Alam Ulin</div>
     <div class="login-subtitle">Admin Panel Login</div>
 
-    <form action="aksi_login.php" method="POST">
+    <?php if (!empty($error)): ?>
+        <div class="alert-login">
+            <?= htmlspecialchars($error); ?>
+        </div>
+    <?php endif; ?>
+
+    <form action="aksi/aksi_login.php" method="POST">
         <div class="mb-3">
             <input type="text" name="username" class="form-control" placeholder="Username" required>
         </div>
