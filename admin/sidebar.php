@@ -6,7 +6,9 @@ if (!isset($activePage)) {
 <div class="sidebar">
     <div>
         <div class="brand">
-            <div class="brand-icon">T</div>
+            <div class="brand-icon">
+                <img src="../assets/img/logohitam.jpg" alt="Logo" width="40" height="40" style="object-fit:cover; border-radius:8px;">
+            </div>
             <div>
                 <div class="brand-title">Teras Alam Ulin</div>
                 <div class="brand-subtitle">Admin Panel</div>
@@ -23,11 +25,5 @@ if (!isset($activePage)) {
         <div class="menu-label mt-4">GENERAL</div>
         <a href="../index.php" class="sidebar-link">🌐 Lihat Website</a>
         <a href="../logout.php" class="sidebar-link">🚪 Logout</a>
-    </div>
-
-    <div class="sidebar-card">
-        <div class="small mb-2">Kelola konten utama website</div>
-        <div class="fw-semibold mb-3">Semua data website bisa diatur dari panel admin ini.</div>
-        <a href="../index.php" class="btn btn-success btn-sm w-100">Buka Website</a>
     </div>
 </div>

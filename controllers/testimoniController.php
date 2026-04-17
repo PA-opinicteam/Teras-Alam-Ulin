@@ -2,24 +2,23 @@
 require_once 'config/koneksi.php';
 
 $query = "SELECT * FROM testimoni 
-          WHERE status = 'approved' 
-          ORDER BY id DESC 
-          LIMIT 3";
+        WHERE status = 'tampil' 
+        ORDER BY id DESC 
+        LIMIT 3";
 
 $testimoni = mysqli_query($conn, $query);
 
-if(isset($_POST['kirim_testimoni'])){
+if (isset($_POST['kirim_testimoni'])) {
+    $nama = mysqli_real_escape_string($conn, $_POST['nama']);
+    $komentar = mysqli_real_escape_string($conn, $_POST['komentar']);
+    $rating = (int) $_POST['rating'];
 
-    $nama = $_POST['nama'];
-    $komentar = $_POST['komentar'];
-    $rating = $_POST['rating'];
+    $query_insert = "INSERT INTO testimoni (nama, komentar, rating, status) 
+                    VALUES ('$nama', '$komentar', '$rating', 'pending')";
 
-    $query = "INSERT INTO testimoni (nama, komentar, rating, status) 
-              VALUES ('$nama', '$komentar', '$rating', 'pending')";
+    mysqli_query($conn, $query_insert);
 
-    mysqli_query($conn, $query);
-
-    header("Location: ".$_SERVER['PHP_SELF']);
+    header("Location: " . $_SERVER['PHP_SELF']);
     exit;
 }
 ?>

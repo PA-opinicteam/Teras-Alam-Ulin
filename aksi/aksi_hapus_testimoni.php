@@ -1,15 +1,11 @@
 <?php
-require __DIR__ . '/../config/koneksi.php';
+require '../config/koneksi.php';
 
-$id = (int)($_GET['id'] ?? 0);
-
-$stmt = mysqli_prepare($conn, "DELETE FROM testimoni WHERE id = ?");
-mysqli_stmt_bind_param($stmt, "i", $id);
-
-if (mysqli_stmt_execute($stmt)) {
-    header('Location: ../admin/testimoni.php');
-    exit;
-} else {
-    echo "Gagal menghapus testimoni: " . mysqli_error($conn);
+if (isset($_GET['id'])) {
+    $id = (int) $_GET['id'];
+    mysqli_query($conn, "DELETE FROM testimoni WHERE id = '$id'");
 }
+
+header("Location: ../admin/testimoni.php");
+exit;
 ?>

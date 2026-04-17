@@ -27,7 +27,7 @@
 
                     <div class="jadwal-item">
                         <span>Senin - Kamis</span>
-                        <span>09:00 - 18:00</span>
+                        <span>09:30 - 18:00</span>
                     </div>
 
                     <div class="jadwal-item">
@@ -37,7 +37,7 @@
 
                     <div class="jadwal-item">
                         <span>Sabtu - Minggu</span>
-                        <span>09:00 - 18:00</span>
+                        <span>08:00 - 18:00</span>
                     </div>
                 </div>
 
