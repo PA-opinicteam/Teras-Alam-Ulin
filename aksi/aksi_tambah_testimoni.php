@@ -1,21 +1,36 @@
 <?php
-require __DIR__ . '/../config/koneksi.php';
+require_once __DIR__ . '/../config/koneksi.php';
 
-$nama = $_POST['nama'] ?? '';
-$komentar = $_POST['komentar'] ?? '';
-$rating = (int)($_POST['rating'] ?? 0);
+header('Content-Type: application/json; charset=utf-8');
+
+$nama     = isset($_POST['nama']) ? trim($_POST['nama']) : '';
+$komentar = isset($_POST['komentar']) ? trim($_POST['komentar']) : '';
+$rating   = isset($_POST['rating']) ? (int) $_POST['rating'] : 0;
 
 if ($nama === '' || $komentar === '' || $rating < 1 || $rating > 5) {
-    header("Location: ../index.php");
+    echo json_encode([
+        'success' => false,
+        'message' => 'Data tidak lengkap.'
+    ]);
     exit;
 }
 
-$status = 'tampil';
+$nama     = mysqli_real_escape_string($conn, $nama);
+$komentar = mysqli_real_escape_string($conn, $komentar);
 
-$stmt = mysqli_prepare($conn, "INSERT INTO testimoni (nama, komentar, rating, status) VALUES (?, ?, ?, ?)");
-mysqli_stmt_bind_param($stmt, "ssis", $nama, $komentar, $rating, $status);
-mysqli_stmt_execute($stmt);
+$sql = "INSERT INTO testimoni (nama, komentar, rating, status)
+        VALUES ('$nama', '$komentar', '$rating', 'pending')";
 
-header("Location: ../index.php");
+if (mysqli_query($conn, $sql)) {
+    echo json_encode([
+        'success' => true,
+        'message' => 'Ulasan berhasil dikirim.'
+    ]);
+} else {
+    echo json_encode([
+        'success' => false,
+        'message' => 'Gagal menyimpan testimoni: ' . mysqli_error($conn)
+    ]);
+}
 exit;
 ?>

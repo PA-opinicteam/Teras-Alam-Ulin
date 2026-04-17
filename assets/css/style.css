@@ -498,3 +498,201 @@ footer {
 #detailWisataModal .modal-body ul li {
     margin-bottom: 8px;
 }
+
+#galeri img {
+    transition: 0.3s;
+}
+
+#galeri img:hover {
+    transform: scale(1.02);
+}
+
+/* ===== GALERI SLIDER ===== */
+.galeri-carousel {
+    position: relative;
+}
+
+.galeri-slide-wrapper {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.galeri-slide-img {
+    height: 520px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeri-overlay {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    padding: 18px 22px;
+    border-radius: 18px;
+    backdrop-filter: blur(2px);
+}
+
+.galeri-overlay h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.galeri-overlay p {
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+#galeriCarousel .carousel-control-prev,
+#galeriCarousel .carousel-control-next {
+    width: 8%;
+}
+
+.custom-galeri-control {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background-size: 45% 45%;
+}
+
+#galeriCarousel .carousel-indicators {
+    bottom: -48px;
+    margin-bottom: 0;
+}
+
+#galeriCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    background-color: #9cc9a3;
+    opacity: 1;
+}
+
+#galeriCarousel .carousel-indicators .active {
+    background-color: #2E7D32;
+}
+
+@media (max-width: 768px) {
+    .galeri-slide-img {
+        height: 300px;
+    }
+
+    .galeri-overlay {
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        padding: 12px 14px;
+    }
+
+    .galeri-overlay h5 {
+        font-size: 15px;
+    }
+
+    .galeri-overlay p {
+        font-size: 12px;
+    }
+
+    .custom-galeri-control {
+        width: 42px;
+        height: 42px;
+    }
+
+    #galeriCarousel .carousel-indicators {
+        bottom: -36px;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: #F5F5DC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s ease;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+.navbar {
+    background: #F5F5DC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.3s ease;
+}
+
+#appTestimoni form {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#appTestimoni .form-control {
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
+#appTestimoni textarea.form-control {
+    resize: none;
+}
+
+#appTestimoni .btn {
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 600;
+}
+
+.testimoni-form-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimoni-form {
+    width: 100%;
+}
+
+.testimoni-form .form-control {
+    width: 100%;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 16px;
+}
+
+.testimoni-form textarea.form-control {
+    resize: none;
+}
+
+.testimoni-form .btn {
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: 600;
+}
+.testimoni-review-wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.testimoni-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
