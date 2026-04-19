@@ -1,22 +1,178 @@
-# 🌿 **TERAS ALAM ULIN - WEBSITE WISATA**
+# 🌿 TERAS ALAM ULIN - WEBSITE WISATA
 
-## **PA-TERAS-ALAM-ULIN**
+## Anggota Tim - 
 
-## - Moch. Farris Alfiansyah (2409116079)
-## - Muhammad Irdhan Nur Faudzan (2409116077)
-## - Khairunisa Aprilia (2409116060)
-## - Elmy Fadillah (2409116075)
+| Nama                        |     NIM    |
+| :-------------------------- | :--------: |
+| Moch. Farris Alfiansyah     | 2409116079 |
+| Muhammad Irdhan Nur Faudzan | 2409116077 |
+| Khairunisa Aprilia          | 2409116060 |
+| Elmy Fadillah               | 2409116075 |
 
 ---
 
-# **A. Deskripsi Aplikasi**
+# A. Deskripsi Aplikasi
 
 Website **Teras Alam Ulin** merupakan aplikasi berbasis web yang dikembangkan untuk menampilkan informasi wisata keluarga di Samarinda secara lengkap, menarik, dan interaktif.
 
-Pengembangan website ini dilatarbelakangi oleh kebutuhan untuk menyediakan media informasi digital yang dapat membantu pengunjung dalam mengetahui **fasilitas, galeri, menu makanan, hingga melakukan reservasi secara online**.
+Website ini bertujuan untuk membantu pengunjung dalam memperoleh informasi terkait **fasilitas, galeri, menu makanan, testimoni, hingga reservasi secara online**.
 
-Selain itu, sistem ini juga dilengkapi dengan **halaman admin** yang memungkinkan pengelolaan data dilakukan secara dinamis, seperti **menambah, mengedit, dan menghapus data**.
+Selain itu, sistem ini juga dilengkapi dengan **halaman admin** yang memungkinkan pengelolaan data dilakukan secara dinamis seperti **menambah, mengedit, dan menghapus data**.
 
+---
+
+# B. Fitur Aplikasi
+
+## a. Landing Page
+- Hero section sebagai tampilan utama  
+- Tombol **Reservasi Sekarang**  
+- Navigasi: Home, Tentang, Fasilitas, Galeri, Menu, Kontak  
+
+## b. Halaman Tentang
+- Informasi lengkap tempat wisata  
+- Konsep wisata alam keluarga  
+- Harga tiket & fasilitas  
+
+## c. Fasilitas
+- Ikan Hias  
+- Terapi Ikan  
+- Gazebo  
+- Paddleboard  
+- Dilengkapi gambar & deskripsi  
+
+## d. Galeri
+- Slider gambar  
+- Menampilkan suasana wisata  
+
+## e. Testimoni
+- Menampilkan ulasan pengunjung  
+- Rating bintang ⭐  
+- Nama & komentar  
+
+## f. Form Ulasan
+- Input:
+  - Nama  
+  - Komentar  
+  - Rating  
+- Data disimpan ke database tanpa reload (AJAX)  
+
+## g. Menu
+- Daftar makanan & minuman  
+- Harga rapi & jelas  
+
+## h. Reservasi
+- Form:
+  - Nama  
+  - Tanggal  
+  - Jumlah orang  
+  - Jenis acara  
+- Terhubung ke WhatsApp  
+
+## i. Lokasi
+- Alamat lengkap  
+- Google Maps  
+- Jam operasional  
+
+---
+
+# C. Komponen & Teknologi yang Digunakan
+
+## 1. Struktur Halaman (Layout)
+
+| Komponen | Deskripsi |
+|---------|----------|
+| Navbar | Navigasi utama website |
+| Hero Section | Tampilan utama |
+| Section | Pembagian halaman |
+| Footer | Informasi tambahan |
+
+---
+
+## 2. Tampilan & Styling
+
+| Teknologi | Fungsi |
+|----------|--------|
+| Bootstrap 5 | Layout responsive |
+| CSS | Styling tambahan |
+| Flexbox | Pengaturan posisi |
+| Grid System | Layout kolom |
+
+---
+
+## 3. Interaksi & UI
+
+| Komponen | Deskripsi |
+|----------|----------|
+| Button | Aksi seperti kirim, edit |
+| Card | Menampilkan data |
+| Modal | Popup informasi |
+| Form | Input data |
+| Rating Bintang | Input rating ⭐ |
+
+---
+
+## 4. JavaScript & Interaktivitas
+
+| Teknologi | Fungsi |
+|----------|--------|
+| JavaScript | Logic frontend |
+| Vue JS | Data dinamis |
+| Fetch API | Kirim data tanpa reload |
+| DOM | Manipulasi tampilan |
+
+---
+
+## 5. Backend (Server Side)
+
+| Teknologi | Fungsi |
+|----------|--------|
+| PHP Native | Logic backend |
+| MySQL | Database |
+| mysqli | Koneksi database |
+
+---
+
+## 6. Sistem Admin
+
+| Fitur | Deskripsi |
+|------|----------|
+| Login Session | Autentikasi admin |
+| CRUD Data | Tambah, edit, hapus |
+| Upload Gambar | Upload foto |
+| Testimoni | Approve / pending |
+
+---
+
+# D. Teknologi yang Digunakan
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="60"/>
+</p>
+
+<p align="center">
+  <sub><b>Built with PHP, MySQL, Bootstrap, JavaScript & Vue JS</b></sub>
+</p>
+
+---
+
+# E. Struktur Folder
+
+```bash
+Teras-Alam-Ulin/
+├── admin/
+├── aksi/
+├── assets/
+├── config/
+├── controllers/
+├── models/
+├── views/
+├── index.php
+├── login.php
+├── logout.php
 ---
 
 # **B. Fitur Aplikasi**
