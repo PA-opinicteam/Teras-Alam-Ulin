@@ -175,7 +175,7 @@ Teras-Alam-Ulin/
 ├── logout.php
 ---
 
-# **B. Fitur Aplikasi**
+# F. Fitur Aplikasi
 
 ## **a). Halaman Landing Page**
 
