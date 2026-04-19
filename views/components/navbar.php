@@ -21,7 +21,7 @@
                 <li class="nav-item"><a class="nav-link" href="index.php#fasilitas">Fasilitas</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#galeri">Galeri</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#menu">Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php#kontak">Kontak</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php#reservasi">Kontak</a></li>
             </ul>
         </div>
 
