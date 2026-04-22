@@ -1,17 +1,29 @@
 <style>
     body {
-        margin: 0;
-        min-height: 100vh;
-        font-family: 'Segoe UI', sans-serif;
-        background:
-            linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
-            url('../assets/img/hero.jpg') no-repeat center center/cover;
-    }
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: none;
+    position: relative;
+} 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
+        url('../assets/img/hero.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -999; /* ⬅️ INI DIGANTI */
+}
 
-    .admin-layout {
-        display: flex;
-        min-height: 100vh;
-    }
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
 
     .sidebar {
         width: 270px;
@@ -24,6 +36,9 @@
         flex-direction: column;
         justify-content: space-between;
         color: white;
+
+        position: relative;
+        z-index: 10;
     }
 
     .brand {
@@ -33,19 +48,25 @@
         margin-bottom: 28px;
     }
 
-    .brand-icon {
-        width: 46px;
-        height: 46px;
-        border-radius: 14px;
-        background: rgba(25,135,84,0.95);
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        font-size: 20px;
-        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-    }
+.brand-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: #fff; /* ⬅️ putih */
+    border: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.brand-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
     .brand-title {
         font-weight: 700;
@@ -76,6 +97,10 @@
         transition: 0.25s;
         font-weight: 500;
         background: transparent;
+
+        position: relative;
+        z-index: 11;
+        pointer-events: auto;
     }
 
     .sidebar-link:hover {
@@ -101,6 +126,8 @@
     .main-content {
         flex: 1;
         padding: 28px;
+        position: relative;
+        z-index: 1;
     }
 
     .topbar {
@@ -113,6 +140,8 @@
         box-shadow: 0 10px 30px rgba(0,0,0,0.12);
         margin-bottom: 26px;
         color: white;
+        position: relative;
+        z-index: 1;
     }
 
     .topbar h2 {
@@ -136,6 +165,8 @@
         box-shadow: 0 10px 24px rgba(0,0,0,0.12);
         color: white;
         margin-bottom: 24px;
+        position: relative;
+        z-index: 1;
     }
 
     .table-dark-glass {
@@ -199,4 +230,19 @@
             font-size: 24px;
         }
     }
+</style>
+
+<style>
+/* CSS kamu sebelumnya */
+
+.table-dark-glass th:last-child,
+.table-dark-glass td:last-child {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-dark-glass td:last-child a {
+    display: inline-block;
+    margin: 0 4px;
+}
 </style>

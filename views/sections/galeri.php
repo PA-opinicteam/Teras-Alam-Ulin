@@ -39,10 +39,10 @@
                                  class="d-block w-100 galeri-slide-img"
                                  alt="<?= htmlspecialchars($g['judul'] ?? 'Galeri Teras Alam Ulin'); ?>">
 
-                            <div class="galeri-overlay">
-                                <h5 class="mb-1"><?= htmlspecialchars($g['judul'] ?? 'Teras Alam Ulin'); ?></h5>
-                                <p class="mb-0"><?= htmlspecialchars($g['deskripsi'] ?? 'Suasana wisata'); ?></p>
-                            </div>
+<div class="galeri-overlay">
+    <h5 class="mb-1"><?= htmlspecialchars($g['keterangan'] ?? 'Teras Alam Ulin'); ?></h5>
+    <p class="mb-0">Galeri Teras Alam Ulin</p>
+</div>
                         </div>
                     </div>
                 <?php

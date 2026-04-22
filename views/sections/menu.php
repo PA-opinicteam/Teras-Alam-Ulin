@@ -1,3 +1,19 @@
+<?php
+$groupedMenus = [];
+
+if (isset($data_menu) && $data_menu) {
+    mysqli_data_seek($data_menu, 0);
+
+    while ($row = mysqli_fetch_assoc($data_menu)) {
+        $kategori = $row['kategori'] ?? 'Lainnya';
+        $groupedMenus[$kategori][] = $row;
+    }
+}
+
+$leftCategories = ['Rice Bowl', 'Snack'];
+$rightCategories = ['Mocktail', 'Other Drink', 'Milky'];
+?>
+
 <section id="menu" class="py-5" style="background:#d8d4b0;">
     <div class="container">
         <p class="text-center mb-2" style="letter-spacing:4px; color:#6c757d; font-size:14px;">MENU</p>
@@ -9,228 +25,44 @@
         <div class="menu-box">
             <div class="row g-4">
 
-                <!-- KOLOM KIRI -->
                 <div class="col-md-6">
-                    <div class="menu-category-block">
-                        <div class="menu-category-title">Rice Bowl</div>
+                    <?php foreach ($leftCategories as $kategori): ?>
+                        <?php if (!empty($groupedMenus[$kategori])): ?>
+                            <div class="menu-category-block">
+                                <div class="menu-category-title"><?= htmlspecialchars($kategori); ?></div>
 
-                        <div class="menu-item">
-                            <span class="menu-name">Ayam Geprek</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp20.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Ayam Geprek Mozzarella</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp25.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Chicken Katsu</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp25.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Beef Belly</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp30.000</span>
-                        </div>
-                    </div>
-
-                    <div class="menu-category-block">
-                        <div class="menu-category-title">Snack</div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Kentang Goreng</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp15.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Sosis Goreng</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp15.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Nugget</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp15.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Mix Snack</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp30.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Singkong</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp18.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Cireng</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp12.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Pisang Keju</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp15.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Pisang Goreng</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp15.000</span>
-                        </div>
-                    </div>
+                                <?php foreach ($groupedMenus[$kategori] as $item): ?>
+                                    <div class="menu-item">
+                                        <span class="menu-name"><?= htmlspecialchars($item['nama_menu']); ?></span>
+                                        <span class="menu-dots"></span>
+                                        <span class="menu-price">
+                                            Rp<?= number_format((int)$item['harga'], 0, ',', '.'); ?>
+                                        </span>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 </div>
 
-                <!-- KOLOM KANAN -->
                 <div class="col-md-6">
-                    <div class="menu-category-block">
-                        <div class="menu-category-title">Mocktail</div>
+                    <?php foreach ($rightCategories as $kategori): ?>
+                        <?php if (!empty($groupedMenus[$kategori])): ?>
+                            <div class="menu-category-block">
+                                <div class="menu-category-title"><?= htmlspecialchars($kategori); ?></div>
 
-                        <div class="menu-item">
-                            <span class="menu-name">Ocean Blue</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp18.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Blue Blood</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp18.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Rainbow</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp18.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Strawberry Breeze</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp18.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Lychee Breeze</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp18.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Blue Lacoon</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp18.000</span>
-                        </div>
-                    </div>
-
-                    <div class="menu-category-block">
-                        <div class="menu-category-title">Other Drink</div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Es Teh</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp8.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Lemon Tea</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp12.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Lychee Tea</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp15.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Kopi Hitam</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp10.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Kopi Susu (Es/Panas)</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp12.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Wedang Jahe</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp15.000</span>
-                        </div>
-                    </div>
-
-                    <div class="menu-category-block">
-                        <div class="menu-category-title">Milky</div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Strawberry</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp16.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Blue Citrus</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp16.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Coffee Latte</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp16.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Cappucino</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp16.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Chocolate</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp16.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Red Velvet</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp16.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Green Tea</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp16.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Thai Tea</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp16.000</span>
-                        </div>
-
-                        <div class="menu-item">
-                            <span class="menu-name">Milo</span>
-                            <span class="menu-dots"></span>
-                            <span class="menu-price">Rp16.000</span>
-                        </div>
-                    </div>
+                                <?php foreach ($groupedMenus[$kategori] as $item): ?>
+                                    <div class="menu-item">
+                                        <span class="menu-name"><?= htmlspecialchars($item['nama_menu']); ?></span>
+                                        <span class="menu-dots"></span>
+                                        <span class="menu-price">
+                                            Rp<?= number_format((int)$item['harga'], 0, ',', '.'); ?>
+                                        </span>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 </div>
 
             </div>

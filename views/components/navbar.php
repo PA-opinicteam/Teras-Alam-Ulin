@@ -21,7 +21,7 @@
                 <li class="nav-item"><a class="nav-link" href="index.php#fasilitas">Fasilitas</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#galeri">Galeri</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#menu">Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php#kontak">Kontak</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php#reservasi">Kontak</a></li>
             </ul>
         </div>
 
@@ -33,8 +33,7 @@
 /* Geser kiri tapi tidak mentok */
 .brand-left {
     position: relative;
-    left: -15px; /* angka pas: tidak mentok, tidak terlalu kanan */
-}
+    left: -15px; 
 
 .logo-navbar {
     object-fit: cover;

@@ -38,7 +38,7 @@
                     </div>
                 </div>
 
-                <div class="row mt-3 text-center">
+                <div class="row mt-3 text-center info-statistik">                 
                     <div class="col-4">
                         <h6 class="fw-bold text-success">2022</h6>
                         <small class="text-muted">Mulai Beroperasi</small>
@@ -52,7 +52,7 @@
 </div>
 
                     <div class="col-4">
-                        <h6 class="fw-bold text-success">5+ Fasilitas</h6>
+                        <h6 class="fw-bold text-success">4   Fasilitas</h6>
                         <small class="text-muted">Tersedia</small>
                     </div>
                 </div>

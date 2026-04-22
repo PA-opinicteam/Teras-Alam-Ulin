@@ -41,7 +41,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn btn-success w-100">
+                <a href="https://maps.app.goo.gl/xFmXN5W4DkHyLrHw8" target="_blank" class="btn btn-success w-100">
                     Buka di Google Maps →
                 </a>
 

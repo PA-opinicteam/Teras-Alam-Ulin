@@ -7,7 +7,7 @@ if (!isset($activePage)) {
     <div>
         <div class="brand">
             <div class="brand-icon">
-                <img src="../assets/img/logohitam.jpg" alt="Logo" width="40" height="40" style="object-fit:cover; border-radius:8px;">
+                <img src="../assets/img/logo.jpg" alt="Logo" width="40" height="40" style="object-fit:cover; border-radius:8px;">
             </div>
             <div>
                 <div class="brand-title">Teras Alam Ulin</div>
