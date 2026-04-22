@@ -463,7 +463,22 @@ footer {
     justify-content: center;
 }
 
+<<<<<<< HEAD
 
+=======
+.info-statistik {
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+}
+
+.info-statistik > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+>>>>>>> e1110db23f4d308d83f8f3052ea0f83976c62336
 
 /* ===== FASILITAS ===== */
 #fasilitas {
@@ -820,4 +835,7 @@ html {
         font-size: 17px;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> e1110db23f4d308d83f8f3052ea0f83976c62336
