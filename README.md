@@ -570,9 +570,9 @@ Teras-Alam-Ulin/
 
 # **🌐 Social Media**
 
-* **Instagram**: https://instagram.com/username
-* **Facebook**: https://facebook.com/username
-* **TikTok**: https://tiktok.com/@username
+* **Instagram**: [https://instagram.com/username](https://www.instagram.com/teras.alam.ulin?igsh=MTVycTF2aTl2MHJlOA==)
+* **Facebook**: [https://facebook.com/username](https://www.facebook.com/share/1CvCYF87py/?mibextid=wwXIfr)
+* **TikTok**: [https://tiktok.com/@username](https://www.tiktok.com/@teras_alam_ulin?_r=1&_t=ZS-95sLS007dLR)
 
 ---
 
