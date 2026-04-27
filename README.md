@@ -272,16 +272,21 @@ Teras-Alam-Ulin/
 
 ## **j). Halaman Lokasi & Jam Operasional**
 
-<img width="1920" height="1080" alt="Screenshot (636)" src="https://github.com/user-attachments/assets/f3a62bd7-18d4-4df6-9892-9b7f7f0e6988" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8aa76e8c-ca10-4115-8189-fd5146931850" />
 
 
-- Menampilkan informasi alamat lengkap Teras Alam Ulin.
-- Menampilkan jam operasional (hari buka dan tutup).
-- Terdapat informasi hari libur (misalnya hari Jumat tutup).
-- Menampilkan peta lokasi menggunakan Google Maps.
-- Disediakan tombol "Buka di Google Maps" untuk akses langsung ke lokasi.
-- Membantu pengunjung menemukan lokasi dengan mudah.
 
+- Menampilkan informasi lokasi dan jam operasional Teras Alam Ulin.
+- Data yang ditampilkan meliputi:
+  - Alamat lengkap
+  - Jam operasional
+- Jam operasional terdiri dari:
+  - Senin – Kamis (jam buka)
+  - Jumat (tutup)
+  - Sabtu – Minggu (jam buka)
+- Terdapat peta lokasi menggunakan Google Maps.
+- Tersedia tombol:
+  - "Buka di Google Maps" → untuk menuju lokasi secara langsung.
 
 ## **K). Footer & Social Media**
 
