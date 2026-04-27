@@ -50,12 +50,13 @@
 
         <div class="col-md-6">
             <div class="map-card">
-                <iframe 
-                    src="https://www.google.com/maps?q=samarinda&output=embed"
-                    width="100%" height="100%" 
-                    style="border:0;" 
-                    allowfullscreen=""
-                    loading="lazy">
+                <iframe
+                src="https://www.google.com/maps?q=Teras%20Alam%20Ulin%20Samarinda&output=embed"
+                width="100%"
+                height="400"
+                style="border:0; border-radius:20px;"
+                allowfullscreen=""
+                loading="lazy">
                 </iframe>
 
                 <div class="map-label">

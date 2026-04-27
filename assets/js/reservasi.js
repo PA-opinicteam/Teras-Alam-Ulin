@@ -36,7 +36,7 @@ Tanggal: ${tanggal}
 Jumlah Orang: ${jumlah}
 Jenis Acara: ${jenis}`;
 
-            let noWa = "6281258254443";
+            let noWa = "6285251166811";
             let url = `https://wa.me/${noWa}?text=${encodeURIComponent(pesan)}`;
 
             window.open(url, '_blank');

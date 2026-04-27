@@ -54,7 +54,7 @@
                     Kirim Reservasi
                 </button>
                 <div class="text-center my-3 text-muted">Atau</div>
-                <a href="https://wa.me/6281258254443" target="_blank" class="btn btn-outline-success w-100">
+                <a href="https://wa.me/6285251166811" target="_blank" class="btn btn-outline-success w-100">
                     Reservasi via WhatsApp
                 </a>
             </form>

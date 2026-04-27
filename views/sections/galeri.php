@@ -36,8 +36,8 @@
                     <div class="carousel-item <?= $no === 0 ? 'active' : ''; ?>">
                         <div class="galeri-slide-wrapper">
                             <img src="assets/img/<?= htmlspecialchars($g['gambar']); ?>"
-                                 class="d-block w-100 galeri-slide-img"
-                                 alt="<?= htmlspecialchars($g['judul'] ?? 'Galeri Teras Alam Ulin'); ?>">
+                                class="d-block w-100 galeri-slide-img"
+                                alt="<?= htmlspecialchars($g['judul'] ?? 'Galeri Teras Alam Ulin'); ?>">
 
 <div class="galeri-overlay">
     <h5 class="mb-1"><?= htmlspecialchars($g['keterangan'] ?? 'Teras Alam Ulin'); ?></h5>
