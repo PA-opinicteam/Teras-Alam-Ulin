@@ -236,7 +236,7 @@ Teras-Alam-Ulin/
 
 ## **h). Halaman Menu**
 
-<img width="1920" height="1080" alt="Screenshot (634)" src="https://github.com/user-attachments/assets/bc5704eb-40f5-4a07-a97a-a9a07d51049c" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bc275358-ad21-4adb-befc-4315a5361113" />
 
 
 
