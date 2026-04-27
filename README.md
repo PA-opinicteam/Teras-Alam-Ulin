@@ -506,12 +506,23 @@ TAMPILAN JIKA TESTIMONI DITAMPILKAN
 
 # **C. Teknologi yang Digunakan**
 
-* **PHP Native**
-* **MySQL**
-* **Bootstrap 5**
-* **JavaScript**
-* **CSS**
-* **Laragon**
+- **PHP Native**  
+  Digunakan sebagai bahasa pemrograman utama untuk membangun logika sistem, mengelola data, serta menghubungkan aplikasi dengan database tanpa menggunakan framework.
+
+- **MySQL**  
+  Digunakan sebagai database untuk menyimpan data seperti menu, galeri, fasilitas, testimoni, dan data admin.
+
+- **Bootstrap 5**  
+  Digunakan untuk membuat tampilan website yang responsif dan modern dengan komponen UI siap pakai seperti navbar, card, dan form.
+
+- **JavaScript**  
+  Digunakan untuk menambahkan interaksi pada website, seperti slider, popup, dan validasi form.
+
+- **CSS**  
+  Digunakan untuk mengatur tampilan dan desain website agar lebih menarik, seperti warna, layout, dan styling elemen.
+
+- **Laragon**  
+  Digunakan sebagai local server untuk menjalankan aplikasi web secara lokal, yang menyediakan Apache, MySQL, dan PHP dalam satu paket.
 
 ---
 
