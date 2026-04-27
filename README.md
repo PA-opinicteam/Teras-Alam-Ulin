@@ -23,57 +23,26 @@ Selain itu, sistem ini juga dilengkapi dengan **halaman admin** yang memungkinka
 
 # B. Fitur Aplikasi
 
-## a. Landing Page
-- Hero section sebagai tampilan utama  
-- Tombol **Reservasi Sekarang**  
-- Navigasi: Home, Tentang, Fasilitas, Galeri, Menu, Kontak  
+👥 Pengunjung
+- Landing page (hero section & navigasi)
+- Informasi tentang wisata
+- Daftar fasilitas (dengan gambar & deskripsi)
+- Galeri (slider foto)
+- Menu makanan & minuman
+- Testimoni pengunjung + rating ⭐
+- Form ulasan (tanpa reload / AJAX)
+- Reservasi via WhatsApp
+- Lokasi & Jam Operasional
 
-## b. Halaman Tentang
-- Informasi lengkap tempat wisata  
-- Konsep wisata alam keluarga  
-- Harga tiket & fasilitas  
+🔐 Admin
+- Login admin (session)
+- Dashboard (ringkasan data)
+- Kelola fasilitas (CRUD)
+- Kelola galeri (CRUD)
+- Kelola menu (CRUD)
+- Kelola testimoni (approve / pending)
+- Upload gamb
 
-## c. Fasilitas
-- Ikan Hias  
-- Terapi Ikan  
-- Gazebo  
-- Paddleboard  
-- Dilengkapi gambar & deskripsi  
-
-## d. Galeri
-- Slider gambar  
-- Menampilkan suasana wisata  
-
-## e. Testimoni
-- Menampilkan ulasan pengunjung  
-- Rating bintang ⭐  
-- Nama & komentar  
-
-## f. Form Ulasan
-- Input:
-  - Nama  
-  - Komentar  
-  - Rating  
-- Data disimpan ke database tanpa reload (AJAX)  
-
-## g. Menu
-- Daftar makanan & minuman  
-- Harga rapi & jelas  
-
-## h. Reservasi
-- Form:
-  - Nama  
-  - Tanggal  
-  - Jumlah orang  
-  - Jenis acara  
-- Terhubung ke WhatsApp  
-
-## i. Lokasi
-- Alamat lengkap  
-- Google Maps  
-- Jam operasional  
-
----
 
 # C. Komponen & Teknologi yang Digunakan
 
@@ -175,7 +144,7 @@ Teras-Alam-Ulin/
 ├── logout.php
 ```
 
-# F. Fitur Aplikasi
+# F. Tampilan Website
 
 ## **a). Halaman Landing Page**
 
