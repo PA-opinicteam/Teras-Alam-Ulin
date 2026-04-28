@@ -272,8 +272,7 @@ Teras-Alam-Ulin/
 
 ## **j). Halaman Lokasi & Jam Operasional**
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8aa76e8c-ca10-4115-8189-fd5146931850" />
-
+<img width="1919" height="795" alt="image" src="https://github.com/user-attachments/assets/12cb4cc9-b7d2-4e8a-ac1b-32b8dc755fcf" />
 
 
 - Menampilkan informasi lokasi dan jam operasional Teras Alam Ulin.
@@ -290,7 +289,7 @@ Teras-Alam-Ulin/
 
 ## **K). Footer & Social Media**
 
-<img width="1920" height="1080" alt="Screenshot (637)" src="https://github.com/user-attachments/assets/d5b4c970-2dbc-4e5e-b22e-7312dc25e94f" />
+<img width="1919" height="200" alt="image" src="https://github.com/user-attachments/assets/0543c9cf-3818-4df5-bebf-d9c75d48df2d" />
 
 - Menampilkan ikon media sosial (TikTok, Facebook, Instagram).
 - Terdapat navigasi cepat ke halaman Home, Galeri, Tentang, Menu, dan Kontak.
@@ -315,7 +314,7 @@ Teras-Alam-Ulin/
 
 ## **b). Dashboard Admin**
 
-<img width="1920" height="1080" alt="Screenshot (640)" src="https://github.com/user-attachments/assets/89a4961f-4d02-4a4a-a05d-73714aed763e" />
+<img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/f0cddfac-65d5-43e8-9c71-54443f2c0c4d" />
 
 
 - Menampilkan halaman utama setelah admin berhasil login.
@@ -329,7 +328,7 @@ Teras-Alam-Ulin/
 
 ## **c). Halaman Data Fasilitas**
 
-<img width="1920" height="1080" alt="Screenshot (641)" src="https://github.com/user-attachments/assets/c82c63e3-1e90-491d-968d-c69fb4aefca0" />
+<img width="1919" height="867" alt="image" src="https://github.com/user-attachments/assets/98a5d850-053e-473d-9947-28ab95248902" />
 
 
 - Menampilkan daftar fasilitas yang tersedia.
@@ -345,7 +344,7 @@ Teras-Alam-Ulin/
 
 ## **d). Halaman Tambah Fasilitas**
 
-<img width="1920" height="1080" alt="Screenshot (642)" src="https://github.com/user-attachments/assets/77e52cc0-1564-4a95-91b0-51840d24bdc4" />
+<img width="1919" height="875" alt="image" src="https://github.com/user-attachments/assets/4f68a00f-7c03-4ca1-8dc4-d43fb310dffe" />
 
 
 - Admin dapat menambahkan data fasilitas baru.
@@ -360,7 +359,7 @@ Teras-Alam-Ulin/
 
 ## **e). Halaman Edit Fasilitas**
 
-<img width="1920" height="1080" alt="Screenshot (643)" src="https://github.com/user-attachments/assets/cd2f522b-b945-4b19-bab6-54e600076d1a" />
+<img width="1919" height="860" alt="image" src="https://github.com/user-attachments/assets/dd3c0131-f3aa-49e5-a870-bb0186916219" />
 
 
 - Admin dapat mengedit data fasilitas.
@@ -376,7 +375,8 @@ Teras-Alam-Ulin/
 
 ## **f). Halaman Data Galeri**
 
-<img width="1920" height="1080" alt="Screenshot (644)" src="https://github.com/user-attachments/assets/726b5822-1fd0-4714-8ce3-85444f65e34a" />
+<img width="1919" height="871" alt="image" src="https://github.com/user-attachments/assets/3fdc5557-244d-46b5-ac66-be985690aa18" />
+
 
 - Menampilkan daftar gambar galeri yang ada di website.
 - Data yang ditampilkan meliputi:
@@ -392,7 +392,7 @@ Teras-Alam-Ulin/
 
 ## **g). Halaman Tambah Galeri**
 
-<img width="1920" height="1080" alt="Screenshot (645)" src="https://github.com/user-attachments/assets/c682c38a-c9e1-4ee1-8072-f99bc99b805a" />
+<img width="1919" height="869" alt="image" src="https://github.com/user-attachments/assets/0fb65e82-5bd2-4222-b8f1-747d79a24fb1" />
 
 
 - Admin dapat menambahkan data galeri baru.
@@ -406,7 +406,7 @@ Teras-Alam-Ulin/
 
 ## **h). Halaman Edit Galeri**
 
-<img width="1920" height="1080" alt="Screenshot (646)" src="https://github.com/user-attachments/assets/765c6d6b-74aa-4c33-a788-2bd7800f2ebc" />
+<img width="1919" height="874" alt="image" src="https://github.com/user-attachments/assets/80548a3a-3941-459a-a3cf-8d39bfa6f868" />
 
 
 - Admin dapat mengedit data galeri.
@@ -467,7 +467,7 @@ Teras-Alam-Ulin/
 
 ## **l). Halaman Data Testimoni**
 
-<img width="1920" height="1080" alt="Screenshot (650)" src="https://github.com/user-attachments/assets/caf5965b-2ece-482b-a3bb-b58f600d5340" />
+<img width="1919" height="858" alt="image" src="https://github.com/user-attachments/assets/cf3beca6-0e68-4dd0-b296-317f14dd7740" />
 
 
 - Menampilkan daftar testimoni pengunjung.
@@ -484,7 +484,7 @@ Teras-Alam-Ulin/
 
 ## **m). Halaman Edit Testimoni**
 
-<img width="1920" height="1080" alt="Screenshot (651)" src="https://github.com/user-attachments/assets/2529e7ed-78de-4361-807b-f2df4cb3e875" />
+<img width="1919" height="857" alt="image" src="https://github.com/user-attachments/assets/c3c22ec3-f237-40f2-92f0-0664cce473fc" />
 
 
 - Admin dapat mengedit isi testimoni.
@@ -499,7 +499,7 @@ Teras-Alam-Ulin/
 
 TAMPILAN JIKA TESTIMONI DITAMPILKAN
 
-<img width="1920" height="1080" alt="Screenshot (652)" src="https://github.com/user-attachments/assets/5f749391-74de-4585-9041-79b22081cbde" />
+<img width="1657" height="539" alt="image" src="https://github.com/user-attachments/assets/8f4c3635-9079-4797-838e-a5a2de4a494d" />
 
 ---
 
