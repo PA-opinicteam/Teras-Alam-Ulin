@@ -299,7 +299,7 @@ Teras-Alam-Ulin/
 ---
 **ADMIN**
 
-## **A). Halaman Login Admin**
+## **a). Halaman Login Admin**
 
 <img width="1920" height="1080" alt="Screenshot (639)" src="https://github.com/user-attachments/assets/c7a7216f-5272-4df2-959d-75ba3655a658" />
 
@@ -313,7 +313,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **B). Dashboard Admin**
+## **b). Dashboard Admin**
 
 <img width="1920" height="1080" alt="Screenshot (640)" src="https://github.com/user-attachments/assets/89a4961f-4d02-4a4a-a05d-73714aed763e" />
 
@@ -327,7 +327,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **C). Halaman Data Fasilitas**
+## **c). Halaman Data Fasilitas**
 
 <img width="1920" height="1080" alt="Screenshot (641)" src="https://github.com/user-attachments/assets/c82c63e3-1e90-491d-968d-c69fb4aefca0" />
 
@@ -343,7 +343,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **D). Halaman Tambah Fasilitas**
+## **d). Halaman Tambah Fasilitas**
 
 <img width="1920" height="1080" alt="Screenshot (642)" src="https://github.com/user-attachments/assets/77e52cc0-1564-4a95-91b0-51840d24bdc4" />
 
@@ -358,7 +358,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **E). Halaman Edit Fasilitas**
+## **e). Halaman Edit Fasilitas**
 
 <img width="1920" height="1080" alt="Screenshot (643)" src="https://github.com/user-attachments/assets/cd2f522b-b945-4b19-bab6-54e600076d1a" />
 
@@ -374,7 +374,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **F). Halaman Data Galeri**
+## **f). Halaman Data Galeri**
 
 <img width="1920" height="1080" alt="Screenshot (644)" src="https://github.com/user-attachments/assets/726b5822-1fd0-4714-8ce3-85444f65e34a" />
 
@@ -390,7 +390,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **G). Halaman Tambah Galeri**
+## **g). Halaman Tambah Galeri**
 
 <img width="1920" height="1080" alt="Screenshot (645)" src="https://github.com/user-attachments/assets/c682c38a-c9e1-4ee1-8072-f99bc99b805a" />
 
@@ -404,7 +404,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **H). Halaman Edit Galeri**
+## **h). Halaman Edit Galeri**
 
 <img width="1920" height="1080" alt="Screenshot (646)" src="https://github.com/user-attachments/assets/765c6d6b-74aa-4c33-a788-2bd7800f2ebc" />
 
@@ -418,7 +418,7 @@ Teras-Alam-Ulin/
 - Tombol "Kembali" untuk membatalkan.
 ---
 
-## **I). Halaman Data Menu**
+## **i). Halaman Data Menu**
 
 <img width="1920" height="1080" alt="Screenshot (647)" src="https://github.com/user-attachments/assets/4fcd9720-93f5-4acf-a28f-522690738a35" />
 
@@ -435,7 +435,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **J). Halaman Tambah Menu**
+## **j). Halaman Tambah Menu**
 
 <img width="1920" height="1080" alt="Screenshot (648)" src="https://github.com/user-attachments/assets/12e54c7e-1fd9-4597-bb86-57e02bad3010" />
 
@@ -451,7 +451,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **K). Halaman Edit Menu**
+## **k). Halaman Edit Menu**
 
 <img width="1920" height="1080" alt="Screenshot (649)" src="https://github.com/user-attachments/assets/3c617015-436c-45c1-9469-cc2da651ddbe" />
 
@@ -468,7 +468,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **L). Halaman Data Testimoni**
+## **l). Halaman Data Testimoni**
 
 <img width="1920" height="1080" alt="Screenshot (650)" src="https://github.com/user-attachments/assets/caf5965b-2ece-482b-a3bb-b58f600d5340" />
 
@@ -485,7 +485,7 @@ Teras-Alam-Ulin/
 
 ---
 
-## **M). Halaman Edit Testimoni**
+## **m). Halaman Edit Testimoni**
 
 <img width="1920" height="1080" alt="Screenshot (651)" src="https://github.com/user-attachments/assets/2529e7ed-78de-4361-807b-f2df4cb3e875" />
 
