@@ -1,6 +1,6 @@
 # 🌿 TERAS ALAM ULIN - WEBSITE WISATA
 
-## Anggota Tim - 
+## Anggota Tim Opinicteam
 
 | Nama                        |     NIM    |
 | :-------------------------- | :--------: |
