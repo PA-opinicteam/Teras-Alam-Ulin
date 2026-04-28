@@ -507,9 +507,7 @@ TAMPILAN JIKA TESTIMONI DITAMPILKAN
 ---
 
 
----
-
-# **C. Teknologi yang Digunakan**
+# **G. Teknologi yang Digunakan**
 
 - **PHP Native**  
   Digunakan sebagai bahasa pemrograman utama untuk membangun logika sistem, mengelola data, serta menghubungkan aplikasi dengan database tanpa menggunakan framework.
@@ -531,25 +529,7 @@ TAMPILAN JIKA TESTIMONI DITAMPILKAN
 
 ---
 
-# **D. Struktur Folder**
-
-```bash
-Teras-Alam-Ulin/
-├── admin/
-├── aksi/
-├── assets/
-├── config/
-├── controllers/
-├── models/
-├── views/
-├── index.php
-├── login.php
-├── logout.php
-```
-
----
-
-# **E. Cara Menjalankan**
+# **H. Cara Menjalankan**
 
 1. **Clone repository**
 2. **Pindahkan ke laragon/www**
@@ -561,7 +541,7 @@ Teras-Alam-Ulin/
 
 ---
 
-# **F. Tujuan Pembuatan**
+# **I. Tujuan Pembuatan**
 
 * Memenuhi tugas **Pemrograman Berbasis Web**
 * Membuat website wisata yang **informatif dan interaktif**
