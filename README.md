@@ -420,15 +420,14 @@ Teras-Alam-Ulin/
 
 ## **i). Halaman Data Menu**
 
-<img width="1920" height="1080" alt="Screenshot (647)" src="https://github.com/user-attachments/assets/4fcd9720-93f5-4acf-a28f-522690738a35" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9d0a3cd1-381a-4495-a548-94cf7da9b299" />
 
 
 - Menampilkan daftar menu makanan dan minuman.
 - Data yang ditampilkan meliputi:
   - Nama menu
-  - Deskripsi
+  - Kategori
   - Harga
-  - Gambar
 - Terdapat tombol aksi:
   - Edit
   - Hapus
@@ -437,15 +436,15 @@ Teras-Alam-Ulin/
 
 ## **j). Halaman Tambah Menu**
 
-<img width="1920" height="1080" alt="Screenshot (648)" src="https://github.com/user-attachments/assets/12e54c7e-1fd9-4597-bb86-57e02bad3010" />
+<img width="1919" height="872" alt="image" src="https://github.com/user-attachments/assets/45aeaf1e-a62a-4ab9-be77-9a630493cfd6" />
 
 
 - Admin dapat menambahkan menu baru.
 - Form berisi:
+  - Kategori
   - Nama menu
-  - Deskripsi
   - Harga
-  - Upload gambar
+
 - Tombol "Simpan" untuk menyimpan data.
 - Tombol "Kembali" untuk membatalkan.
 
@@ -453,16 +452,14 @@ Teras-Alam-Ulin/
 
 ## **k). Halaman Edit Menu**
 
-<img width="1920" height="1080" alt="Screenshot (649)" src="https://github.com/user-attachments/assets/3c617015-436c-45c1-9469-cc2da651ddbe" />
+<img width="1919" height="869" alt="image" src="https://github.com/user-attachments/assets/5acceed8-7306-4c60-a9b5-f766726c09ed" />
 
 
 - Admin dapat mengedit data menu.
 - Form berisi:
+  - Kategori
   - Nama menu
-  - Deskripsi
   - Harga
-  - Gambar saat ini
-  - Upload gambar baru (opsional)
 - Tombol "Update" untuk menyimpan perubahan.
 - Tombol "Kembali" untuk membatalkan.
 
@@ -549,12 +546,3 @@ TAMPILAN JIKA TESTIMONI DITAMPILKAN
 * Mempermudah **pengelolaan data admin**
 
 ---
-
-# **🌐 Social Media**
-
-* **Instagram**: [https://instagram.com/username](https://www.instagram.com/teras.alam.ulin?igsh=MTVycTF2aTl2MHJlOA==)
-* **Facebook**: [https://facebook.com/username](https://www.facebook.com/share/1CvCYF87py/?mibextid=wwXIfr)
-* **TikTok**: [https://tiktok.com/@username](https://www.tiktok.com/@teras_alam_ulin?_r=1&_t=ZS-95sLS007dLR)
-
----
-
