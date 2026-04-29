@@ -26,20 +26,19 @@ body::before {
 }
 
     .sidebar {
-        width: 270px;
-        background: rgba(255,255,255,0.12);
-        backdrop-filter: blur(14px);
-        -webkit-backdrop-filter: blur(14px);
-        padding: 24px 18px;
-        border-right: 1px solid rgba(255,255,255,0.18);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        color: white;
+    width: 250px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(14px);
+    padding: 24px 18px;
+    border-right: 1px solid rgba(255,255,255,0.18);
 
-        position: relative;
-        z-index: 10;
-    }
+    position: fixed;  /* ✅ FIX */
+    top: 0;
+    left: 0;
+    height: 100vh;
+
+    z-index: 9999;
+}
 
     .brand {
         display: flex;
@@ -168,6 +167,10 @@ body::before {
         position: relative;
         z-index: 1;
     }
+
+    .main-content {
+    margin-left: 250px;
+}
 
     .table-dark-glass {
         width: 100%;

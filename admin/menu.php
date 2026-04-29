@@ -14,7 +14,9 @@ $query = mysqli_query($conn, "SELECT * FROM menu ORDER BY kategori ASC, nama_men
     <?php include 'layout_style.php'; ?>
 </head>
 <body>
+
 <div class="admin-layout">
+
     <?php include 'sidebar.php'; ?>
 
     <div class="main-content">
@@ -69,6 +71,8 @@ $query = mysqli_query($conn, "SELECT * FROM menu ORDER BY kategori ASC, nama_men
             </div>
         </div>
     </div>
+
 </div>
+
 </body>
 </html>
