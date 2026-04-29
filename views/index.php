@@ -195,5 +195,3 @@ window.onscroll = function () {
 
 </body>
 </html>
-
-/* ================= udah update ya ================= */
